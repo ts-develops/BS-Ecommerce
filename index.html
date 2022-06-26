@@ -1,25 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>E-commerce Site</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
+    />
     <link rel="stylesheet" href="style.css" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
-      crossorigin="anonymous"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css"
-    />
+    <title>SourcedXclusiv</title>
   </head>
   <body>
     <!--Nav-->
-    <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
-      <div class="container">
+    <nav class="navbar navbar-expand-lg sticky-top bg-dark navbar-dark">
+      <div class="container-fluid">
         <a href="#" class="navbar-brand">SourcedXclusiv</a>
         <button
           class="navbar-toggler"
@@ -30,7 +25,7 @@
           <span class="navbar-toggler-icon"></span>
         </button>
 
-        <div class="collapse navbar-collapse" id="#navmenu">
+        <div class="collapse navbar-collapse text-center" id="navmenu">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
               <a href="#" class="nav-link">Home</a>
@@ -42,15 +37,16 @@
               <a href="/blog.html" class="nav-link">Blog</a>
             </li>
             <li class="nav-item">
-              <a href="/services.html" class="nav-link">Services</a>
+              <a href="index.html#services" class="nav-link">Services</a>
             </li>
             <li class="nav-item">
-              <a href="/contactus.html" class="nav-link">Contact Us</a>
+              <a href="index.html#contactus" class="nav-link">Contact Us</a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
+
     <!--Hero-->
     <section>
       <div
@@ -61,7 +57,7 @@
         "
       >
         <div class="mast">
-          <button type="button" class="btn btn-secondary">CHECK US OUT</button>
+            <a class="btn btn-secondary" href="#products" role="button">Check Us Out</a>
         </div>
       </div>
     </section>
@@ -77,10 +73,9 @@
         </div>
       </div>
     </section>
-    
 
-    <!--Service-->
-    <section class="p-5">  
+    <!--Products-->
+    <section class="p-5" id="products">  
         <div class="container">
         <h1 class="text-center">Products</h1>
             <div class=" mt-4 row text-center d-flex justify-content-between g-4">
@@ -97,10 +92,10 @@
 
             <div class="col-lg-4 col-md-5">
                 <div class="card" >
-            <img src="/img/products/amiriflower.jpeg" class="card-img-top"  alt="...">
+            <img src="/img/products/jordan3cardinal.avif" class="card-img-top"  alt="...">
             <div class="card-body text-center">
-            <h5 class="card-title">Amiri</h5>
-                <h6 class="card-subtitle mb-2 text-muted">Amiri Flower</h6>
+            <h5 class="card-title">Jordan</h5>
+                <h6 class="card-subtitle mb-2 text-muted">Jordan 4 cardinal</h6>
                 <p class="card-text">£200</p>
             </div>
             </div>
@@ -108,23 +103,23 @@
 
             <div class="col-lg-4 col-md-5" >
                 <div class="card" >
-            <img src="/img/products/amiriplain.jpeg" class="card-img-top" alt="...">
+            <img src="/img/products/jordan11coolgrey.webp" class="card-img-top" alt="...">
             <div class="card-body text-center">
-            <h5 class="card-title">Amiri</h5>
-                <h6 class="card-subtitle mb-2 text-muted">Amiri Plain</h6>
+            <h5 class="card-title">Jordan</h5>
+                <h6 class="card-subtitle mb-2 text-muted">Jordan 11 cool grey</h6>
                 <p class="card-text">£200</p>
             </div>
             </div>
             </div>
         </div>
         <div class="d-flex justify-content-center mt-4">
-        <button class="btn btn-secondary ">SHOP OUR COLLECTION</button>
+        <a class="btn btn-secondary" href="/shop.html" role="button">SHOP OUR COLLECTION</a>
     </div>
     </div>
     </section>
 
     <!--Service-->
-    <section class="p-5">
+    <section class="p-5" id="services">
       <div class="container">
         <h1 class="text-center mb-4">Services</h1>
         <div class="row text-center g-4">
@@ -174,7 +169,7 @@
     </section>
 
     <!--Contact Us-->
-    <section class="p-5">
+    <section class="p-5" id="contactus">
     <div class="container">
                 <div class="row justify justify-content-center">
                     <div class="col-md-12 text-center">
@@ -206,11 +201,6 @@
     </div>
     </section>
 
-
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
 </html>
